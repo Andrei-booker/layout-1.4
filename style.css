@@ -45,7 +45,10 @@ body {
     color: #1B1C21;
     margin: 0;
     width: 320px;
+    height: 100%;
     position: sticky;
+    left: 0;
+    top: 0;
     background-color: #ffffff;
     box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);
 }
@@ -86,14 +89,18 @@ body {
 
 .main-menu {
     margin: 0;
+    margin-bottom: 220px;
     padding: 0;
     list-style: none;
-    margin-bottom: auto;
 }
 
 .main-menu__item {
-    margin-left: 24px;
+    padding-left: 24px;
     margin-bottom: 32px;
+}
+
+.main-menu__item:last-child {
+    margin: 0;
 }
 
 .main-menu__item a {
@@ -113,7 +120,9 @@ body {
     left: 0px;
     background-image: url('img/highlight.svg');
 }
-
+.footer {
+    padding-left: 24px;
+}
 .fotter__icons {
     display: flex;
     margin-bottom: 16px;
@@ -121,7 +130,6 @@ body {
 
 .icon__phone {
     margin-right: 16px;
-    margin-left: 24px;
 }
 
 .icon__chat {
@@ -132,7 +140,6 @@ body {
     display: block;
     text-decoration: none;
     color: inherit;
-    margin-left: 24px;
     margin-bottom: 12px;
 }
 
@@ -143,7 +150,6 @@ body {
     font-size: 24px;
     line-height: 32px;
     font-weight: 600;
-    margin-left: 24px;
     margin-bottom: 40px;
 }
 
@@ -157,8 +163,4 @@ body {
 
 .footer__language--active {
     color: #7E7E82;
-}
-
-.footer__language:first-child {
-    margin-left: 24px;
 }
